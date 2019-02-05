@@ -1,0 +1,37 @@
+
+
+Introduction:
+
+This website project are responsible for extracting the 10 newest questions in specific title (example: Android-related) as well as the 10 most voted questions in specific title (example: Android-related).
+
+
+
+
+Features:
+
+1.	Text Box search Tag: to search about specific topic (example: Android-related), 
+2.	Drop down list: to determine the result criteria (newest or most voted questions).
+3.	Displays the titles of the extracted questions
+4.	Displaying question thread after clicking on select link for one of the questions.
+5.	Redirect the user to the question in the original website (stackoverflow.com) after clicking on one of the titles to contribute in the solution.
+
+
+To run the code:
+
+1.	Open the project in visual studio
+2.	Add new reference library (joson.NET .NET 4.0)
+3.	Run the website on your local host.
+
+
+How the website work:
+
+1.	Using (HttpWebRequest) to call web API to retrieve the data from (stackoverflow.com) website based on the user input criteria.
+2.	Response the data using (HttpWebResponse).
+3.	Read the data using (StreamReader)
+4.	Generate C sharp Classes from the json data.
+5.	Browsing the 10 questions for the user.
+6.	When the user select on the select link the system will call the web API to retrieve selected question details.
+7.	When the user select on the hyperlink the system will direct him to the select question in the original site (stackoverflow.com) to contribute in the solution.
+
+
+
